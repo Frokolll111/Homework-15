@@ -11,7 +11,6 @@ public class Car extends Transport{
             i++;
         }
         System.out.println("Меняем " + getWheelsCount() + " покрышки");
-        System.out.println();
         }
         @Override
         public void checkEngine() {
@@ -20,6 +19,7 @@ public class Car extends Transport{
             engine++;
         }
         System.out.println("Проверяем двигатель");
+            System.out.println();
     }
 
     @Override
