@@ -11,11 +11,17 @@ public class Truck extends Transport {
             i++;
         }
         System.out.println("Меняем " + getWheelsCount() + " покрышки");
-        int engine = 0;
-        while (engine > getWheelsCount()) {
-            engine++;
+    }
+@Override
+        public void checkEngine() {
+            int engine = 0;
+            while (engine > getWheelsCount()) {
+                engine++;
+            }
+            System.out.println("Проверяем двигатель");
         }
-        System.out.println("Проверяем двигатель");
+@Override
+       public void checkTrailer() {
         int trailer = 0;
         while (trailer > getWheelsCount()) {
             trailer++;
@@ -24,3 +30,4 @@ public class Truck extends Transport {
         System.out.println();
     }
 }
+

@@ -1,4 +1,4 @@
-public class Bicycle extends  Transport {
+    public class Bicycle extends  Transport {
     public Bicycle(String modelName, int wheelsCount) {
         super (modelName, wheelsCount);
     }
@@ -12,4 +12,12 @@ public class Bicycle extends  Transport {
         System.out.println("Меняем " + getWheelsCount() + " покрышки");
         System.out.println();
     }
-}
+
+        @Override
+        public void checkEngine() {
+        }
+
+        @Override
+        public void checkTrailer() {
+        }
+    }

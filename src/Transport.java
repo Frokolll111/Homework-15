@@ -23,4 +23,8 @@ public abstract class Transport {
         this.wheelsCount = wheelsCount;
     }
     public abstract void service();
+
+    public abstract void checkEngine();
+
+    public abstract void checkTrailer();
 }
