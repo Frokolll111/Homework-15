@@ -1,33 +1,13 @@
-public class Truck extends Transport {
+public class Truck extends TransportEngine {
     public Truck(String modelName, int wheelsCount) {
-        super (modelName, wheelsCount);
+        super(modelName, wheelsCount);
     }
 
     @Override
     public void service() {
-        System.out.println("Модель " + getModelName());
-        int i = 0;
-        while (i < getWheelsCount()) {
-            i++;
-        }
-        System.out.println("Меняем " + getWheelsCount() + " покрышки");
-    }
-@Override
-        public void checkEngine() {
-            int engine = 0;
-            while (engine > getWheelsCount()) {
-                engine++;
-            }
-            System.out.println("Проверяем двигатель");
-        }
-@Override
-       public void checkTrailer() {
-        int trailer = 0;
-        while (trailer > getWheelsCount()) {
-            trailer++;
-        }
-        System.out.println("Проверяем прицеп");
-        System.out.println();
+        super.service();
+        checkEngine();
+        checkTrailer();
     }
 }
 
