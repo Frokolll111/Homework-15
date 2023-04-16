@@ -13,12 +13,4 @@ public  abstract  class TransportEngine extends  Transport {
         System.out.println();
     }
 
-    public void checkTrailer() {
-        int trailer = 0;
-        while (trailer < getWheelsCount()) {
-            trailer++;
-        }
-        System.out.println("Проверяем прицеп");
-        System.out.println();
-    }
 }

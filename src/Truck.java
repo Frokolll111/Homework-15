@@ -9,5 +9,14 @@ public class Truck extends TransportEngine {
         checkEngine();
         checkTrailer();
     }
+
+    public void checkTrailer() {
+        int trailer = 0;
+        while (trailer < getWheelsCount()) {
+            trailer++;
+        }
+        System.out.println("Проверяем прицеп");
+        System.out.println();
+    }
 }
 
